@@ -1,0 +1,10 @@
+version: '3'
+services:
+     maildev:
+          build:
+               context: .
+               dockerfile: maildev.Dockerfile
+          ports:
+               - '1080:1080'
+               - '1025:1025'
+
